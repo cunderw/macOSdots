@@ -79,3 +79,19 @@ chunkc tiling::rule --owner \"mpv\" --state float &
 chunkc tiling::rule --owner \"The Unarchiver\" --state float &
 chunkc tiling::rule --owner \"Transmission\" --state float &
 chunkc tiling::rule --owner \"VirtualBox\" --name \"Oracle VM VirtualBox Manager\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Delete\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Extract \" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Inline Method\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Move\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"New Class\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"New Kotlin File/Class\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Platform and Plugin Updates\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name Preferences --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Project Structure\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Rename\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Tip of the Day\" --state float &
+chunkc tiling::rule --owner \"Android Studio\" --name \"Welcome to Android Studio\" --state float &
+chunkc tiling::rule --name \"Android Emulator\" --state float &
+chunkc tiling::rule --owner FaceTime --state float &
+chunkc tiling::rule --owner Simulator --state float &
+chunkc tiling::rule --owner Swift --state float &
