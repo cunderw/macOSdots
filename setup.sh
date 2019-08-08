@@ -97,13 +97,13 @@ echo "Installing Cask"
 brew install cask
 
 declare -a cask_apps=(
-  ‘1password’
-  ‘bartender’
-  ‘visual-studio-code’
-  ‘gitkraken’
-  ‘iterm2’
-  ‘postman’
-  ‘slack’
+    ‘1password’
+    ‘bartender’
+    ‘visual-studio-code’
+    ‘gitkraken’
+    ‘iterm2’
+    ‘postman’
+    ‘slack’
 )
 
 for app in "${cask_apps[@]}"; do
@@ -117,10 +117,21 @@ brew install zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo "Setting Up Tmux"
+brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
+
+echo "Installing Vundl"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 echo "Copying dot files"
 cp ./zsh/zshrc ~/.zshrc
 cp ./vim/vimrc ~/.vimrc
 cp ./nano/nanorc ~/.nanorc
+cp ./tmux/tmux.conf ~/.tmux.conf
 
 echo "Sourcing zshrc"
 source ~/.zshrc
+
+echo "Post Setup\nRun Inside Vim: :PluginInstall"

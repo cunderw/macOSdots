@@ -1,4 +1,4 @@
-so ~/.vim/plugins.vim
+" so ~/.vim/plugins.vim
 " Setting some decent VIM settings for programming
 
 set ai                          " set auto-indenting on for programming
@@ -12,6 +12,6 @@ set background=dark             " Use colours that work well on a dark backgroun
 set showmode                    " show the current mode
 set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 syntax on                       " turn syntax highlighting on by default
+filetype plugin indent on
 
-filetype off                  " required
 map <C-o> :NERDTreeToggle<CR>
